@@ -14,7 +14,9 @@ var updatePost = function () {
 
 	for (var i = 0; i < posts.length; i++) {
 		$(".posts").append("<div class='post' data-id=" + posts[i].id + ">" + 
-			"<a href='#' class='remove'>remove  </a>" + posts[i].text +"<br>" + "<div class='displayComment'></div>"+
+			"<a href='#' class='remove'>remove  </a>" + posts[i].text +"<br>" + 
+      "<button type='button'class='btn btn-primary newPage'>newPage...</button>"+
+      "<div class='displayComment'></div>"+
 			"<div class='comments-inputs'>Username<input class='username' type='text' placeholder='username'><br>"+
 			"Comment:<input class='comment1' type='text'><br>"+
 			"<button type='button' class='btn btn-primary submit'>Submit</button></div>"+ 
